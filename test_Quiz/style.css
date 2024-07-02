@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0447b1;
+    --secondary-color: #031747;
+    --text-color: #000000;
+    --button-background: #fff;
+    --button-color: #222;
+    --button-hover-background: #222;
+    --button-hover-color: #fff;
+    --button-disabled-color: #6dc5ca;
+    --button-border-color: #222;
+    --button-border-width: 1px;
+    --button-padding-y: 20px;
+    --button-margin-y: 5px;
+    --button-border-radius: 4px;
+    --button-transition: all 0.2s;
+    --button-max-width: 300px;
+    --large-margin: 100px;
+}
+
+.app {
+    background: var(--primary-color);
+    width: 90%;
+    max-width: 600px;
+    margin: var(--large-margin) auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-size: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: var(--button-background);
+    color: var(--button-color);
+    font-weight: 500;
+    width: 100%;
+    border: var(--button-border-width) solid var(--button-border-color);
+    padding: var(--button-padding-y);
+    margin: var(--button-margin-y) 0;
+    text-align: center;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    transition: var(--button-transition);
+}
+
+.btn:hover:not([disabled]) {
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: var(--secondary-color);
+    color: var(--button-disabled-color);
+    margin: 20px auto 0;
+    display: none;
+    padding: 10px;
+    border: 1px solid var(--button-border-color);
+    border-radius: 20px;
+    width: 100%;
+    max-width: var(--button-max-width);
+    cursor: pointer;
+}
+
+.correct {
+    background: #08f22b;
+}
+
+.incorrect {
+    background: #a10202;
+}
